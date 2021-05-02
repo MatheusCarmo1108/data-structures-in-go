@@ -10,6 +10,7 @@ The Examples implemented include:
 - [Stack](https://github.com/MatheusCarmo1108/data-structures-in-go/blob/master/data-structure/stack-queue/stack/stack.go): ([Wiki](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)))
 - [Binary search tree](https://github.com/MatheusCarmo1108/data-structures-in-go/blob/master/data-structure/binary-search-tree/binarySearchTree.go): ([Wiki](https://en.wikipedia.org/wiki/Binary_search_tree))
 - [Trie](https://github.com/MatheusCarmo1108/data-structures-in-go/blob/master/data-structure/trie/trie.go): ([Wiki](https://pt.wikipedia.org/wiki/Trie))
+- [Hash Table](https://github.com/MatheusCarmo1108/data-structures-in-go/blob/master/data-structure/hash-table/hashTable.go): ([Wiki](https://en.wikipedia.org/wiki/Hash_table))
 
 ## Resource
 - [Video: Data Structures in Golang Series](https://www.youtube.com/playlist?list=PL0q7mDmXPZm7s7weikYLpNZBKk5dCoWm6)
