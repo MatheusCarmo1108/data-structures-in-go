@@ -51,6 +51,28 @@ func (l *linkedList) deleteWithValue(value int) {
 	previousToDelete.next = previousToDelete.next.next
 	l.length--
 }
+
+func (l *linkedList) reverseLinkedList() {
+	var pa, p, pd *node
+	if l.head != nil {
+		pa = nil
+		p = l.head
+		pd = p.next
+
+		for {
+			p.next = pa
+			pa = p
+			p = pd
+			if pd != nil {
+				pd = pd.next
+			}
+			if p == nil {
+				break
+			}
+		}
+		l.head = pa
+	}
+}
 func main() {
 	mylist := linkedList{}
 	node1 := &node{data: 40}
@@ -67,11 +89,13 @@ func main() {
 	mylist.prepend(node6)
 	mylist.printListData()
 
-	mylist.deleteWithValue(100) //previously: runtime error - this value isn't in the list
-	mylist.deleteWithValue(32)  //previously: runtime error- you cannot delete the header
-	mylist.deleteWithValue(40)
+	//mylist.deleteWithValue(100) //previously: runtime error - this value isn't in the list
+	//mylist.deleteWithValue(32)  //previously: runtime error- you cannot delete the header
+	//mylist.deleteWithValue(40)
 	mylist.printListData()
 	emptylist := linkedList{}
 	emptylist.deleteWithValue(10) //previously: this linkedlist is empty, you cannot delete a value in that case
 	//Now, go back and handle these especial cases
+	mylist.reverseLinkedList()
+	mylist.printListData()
 }
